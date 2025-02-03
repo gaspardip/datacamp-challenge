@@ -2,6 +2,8 @@
 
 A responsive Markdown editor built with React and TypeScript. The focus was on delivering a polished, production-ready app that balances performance, user experience, and clean, maintainable code—all while meeting the exercise's requirements.
 
+A live version of the app is hosted on Vercel: [https://datacamp-challenge.vercel.app/](https://datacamp-challenge.vercel.app/)
+
 ## Features
 
 - **Split-Pane Layout:** Resizable panels for editing and previewing side by side.
