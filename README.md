@@ -62,23 +62,23 @@ A few conscious decisions I made along the way:
 
 1. **Local Storage vs Backend**
 
-I chose local storage for simplicity and offline functionality. While it has limitations, it's more than sufficient for an MVP.
+   I chose local storage for simplicity and offline functionality. While it has limitations, it's more than sufficient for an MVP.
 
 2. **Markdown Processing**
 
-All processing happens client-side for instant feedback. If performance becomes a bottleneck, shifting to Web Workers is an option.
+   All processing happens client-side for instant feedback. If performance becomes a bottleneck, shifting to Web Workers is an option.
 
 3. **Component Library**
 
-I used **shadcn/ui** for fast, reliable UI development, even if it means a slightly larger bundle size.
+   I used **shadcn/ui** for fast, reliable UI development, even if it means a slightly larger bundle size.
 
 4. **Performance**
 
-- Syntax Highlighting: I used react-syntax-highlighter, which isn’t the most performant. If necessary, I’ll explore lighter alternatives.
+   - Syntax Highlighting: I used react-syntax-highlighter, which isn’t the most performant. If necessary, I’ll explore lighter alternatives.
 
-- Re-renders: The entire app re-renders when Markdown changes. For now, this trade-off balances simplicity and performance.
+   - Re-renders: The entire app re-renders when Markdown changes. For now, this trade-off balances simplicity and performance.
 
-- Large Documents: Performance might degrade with very long Markdown files.
+   - Large Documents: Performance might degrade with very long Markdown files.
 
 ## Future Improvements
 
