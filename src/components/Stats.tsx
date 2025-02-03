@@ -1,10 +1,8 @@
-import { memo } from "react";
-
 type StatsProps = {
   markdown: string;
 };
 
-export const Stats = memo(({ markdown }: StatsProps) => {
+export const Stats = ({ markdown }: StatsProps) => {
   const plainText = markdown
     .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
     .replace(/[#*`~_]/g, '')
@@ -21,4 +19,4 @@ export const Stats = memo(({ markdown }: StatsProps) => {
       {stats.words} words | {stats.chars} characters
     </div>
   );
-});
+};
